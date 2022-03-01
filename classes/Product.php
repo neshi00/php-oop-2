@@ -4,13 +4,12 @@ class Product {
 
     protected string $description;
     protected string $brand;
-    protected int $price;
+    protected float $price;
 
 
-    function __construct(string $_description, string $_brand, int $_price)
+    function __construct(string $_description, float $_price)
     {
         $this-> description = $_description;
-        $this-> brand = $_brand;
         $this-> price = $_price;
         
     }

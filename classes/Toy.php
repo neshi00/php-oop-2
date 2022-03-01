@@ -6,9 +6,9 @@ class Toy extends Product {
     protected string $material;
 
 
-    public function __construct(string $_description, string $_brand, int $_price, $_material)
+    public function __construct(string $_description, float $_price, $_material)
     {
-        parent :: __construct($_description, $_brand, $_price);
+        parent :: __construct($_description, $_price);
 
         $this->material = $_material;
 

@@ -8,12 +8,12 @@ class Food extends Product {
     protected string $ingredients;
 
 
-    public function __construct(string $_description, string $_brand, int $_price, string $_expirationDate, string $_ingredients )
+    public function __construct(string $_description, float $_price, string $_expirationDate )
     {
-        parent :: __construct($_description, $_brand, $_price);
+        parent :: __construct($_description, $_price);
 
         $this->expirationDate = $_expirationDate;
-        $this->ingredients = $_ingredients;
+      
   
     }
 
